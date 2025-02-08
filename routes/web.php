@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 Route::get('/', function () {
-    return inertia('Home');
+    return inertia('Home', ['team' => "ABC Team"]);
 });
 
-// Route::get('/', function () {
-//     return Inertia::render('About/About');
-// });
+Route::inertia('/about', 'About/About');
+

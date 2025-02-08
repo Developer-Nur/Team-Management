@@ -1,7 +1,17 @@
-export default function Home() {
+import Layout from "../Layout/Layout"
+
+function Home({ team }) {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
-            <h1 className="text-3xl font-bold text-blue-500">Welcome to Tailwind CSS with Inertia.js!</h1>
-        </div>
+        <>
+            <div>
+                <h1 className="text-3xl font-bold text-blue-500">
+                    Team task management!
+                </h1>
+                <p className="text-3xl font-bold text-blue-500">Hello Team {team}</p>
+            </div>
+        </>
     )
 }
+
+Home.layout = page => <Layout children={page} />
+export default Home
