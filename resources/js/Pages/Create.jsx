@@ -32,7 +32,7 @@ const Create = () => {
                          className=' w-full bg-blue-500 rounded-lg px-4 py-2 font-medium text-white'
                          disabled={processing}
                          >
-                            Submit
+                            Submit the post
                         </button>
                     </form>
                 </div>
